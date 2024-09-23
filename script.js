@@ -32,9 +32,11 @@ function populatetable(promiseResults, totalTime){
 
 function handlePromises(){
 	const tableBody = document.getElementById("output");
-	const row = document.createElement('tr');
-	row.innerHTML = `<td  colspan="2" id="loading">Loading...</td>`;
-	tableBody.appendChild(row);
+	tableBody.innerHTML = `
+		<tr id="loading">
+			<td  colspan="2">Loading...</td>
+		</tr>
+		`;
 
 	const promises = [
 		createPromises('Promise 1'),
