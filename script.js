@@ -16,7 +16,7 @@ function populatetable(promiseResults, totalTime){
 	promiseResults.forEach((result, index) => {
 		const row = document.createElement('tr');
 		row.innerHTML = `
-			<td>Promise ${index+1}<td>
+			<td>${result.promiseName}<td>
 			<td>${result.timeTaken}<td>
 		` 
 		tableBody.appendChild(row);
