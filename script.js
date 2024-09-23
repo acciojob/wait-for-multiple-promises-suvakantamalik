@@ -16,16 +16,16 @@ function populatetable(promiseResults, totalTime){
 	promiseResults.forEach((result, index) => {
 		const row = document.createElement('tr');
 		row.innerHTML = `
-			<td>${result.promiseName}<td>
-			<td>${result.timeTaken}<td>
+			<td>${result.promiseName}</td>
+			<td>${result.timeTaken}</td>
 		` 
 		tableBody.appendChild(row);
 	});
 
 	const totalRow = document.createElement('tr');
 	totalRow.innerHTML = `
-		<td>Total<td>
-		<td>${totalTime.toFixed(3)}<td>
+		<td>Total</td>
+		<td>${totalTime.toFixed(3)}</td>
 	`
 	tableBody.appendChild(totalRow);
 }
